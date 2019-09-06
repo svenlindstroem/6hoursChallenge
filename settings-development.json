@@ -3,7 +3,7 @@
     "graphQL": {
       "httpUri": "http://localhost:3000/graphql"
     },
-    "productName": "6HourChallenge",
+    "productName": "6HoursChallenge",
     "copyrightStartYear": "2019",
     "twitterUsername": "product",
     "facebookUsername": "product",
