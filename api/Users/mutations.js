@@ -1,9 +1,9 @@
-import { Meteor } from 'meteor/meteor';
-import { Accounts } from 'meteor/accounts-base';
+// import { Meteor } from 'meteor/meteor';
+// import { Accounts } from 'meteor/accounts-base';
 import updateUser from './actions/updateUser';
 import queryUser from './actions/queryUser';
 import removeUser from './actions/removeUser';
-import sendWelcomeEmail from './actions/sendWelcomeEmail';
+// import sendWelcomeEmail from './actions/sendWelcomeEmail';
 
 export default {
   updateUser: async (parent, args, context) => {
@@ -19,7 +19,7 @@ export default {
       currentUser: user,
       user: args,
     }),
-  sendVerificationEmail: (parent, args, context) => {
+  /* sendVerificationEmail: (parent, args, context) => {
     Accounts.sendVerificationEmail(context.user._id);
 
     return {
@@ -32,5 +32,5 @@ export default {
     return {
       _id: context.user._id,
     };
-  },
+  }, */
 };
