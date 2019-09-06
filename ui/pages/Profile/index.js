@@ -226,15 +226,6 @@ class Profile extends React.Component {
                   </form>
                 </Validation>
                 <AccountPageFooter>
-                  <p>
-                    <Button bsStyle="link" className="btn-export" onClick={this.handleExportData}>
-                      Export my data
-                    </Button>
-                    {' - '}
-                    Download all of your documents as .txt files in a .zip
-                  </p>
-                </AccountPageFooter>
-                <AccountPageFooter>
                   <Button bsStyle="danger" onClick={this.handleDeleteAccount}>
                     Delete My Account
                   </Button>
