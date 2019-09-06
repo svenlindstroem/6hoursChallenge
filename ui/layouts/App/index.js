@@ -37,9 +37,6 @@ import Terms from '../../pages/Terms';
 import Privacy from '../../pages/Privacy';
 import ExamplePage from '../../pages/ExamplePage';
 
-import VerifyEmailAlert from '../../components/VerifyEmailAlert';
-import GDPRConsentModal from '../../components/GDPRConsentModal';
-
 import withTrackerSsr from '../../../modules/withTrackerSsr';
 import getUserName from '../../../modules/getUserName';
 
@@ -64,14 +61,7 @@ class App extends React.Component {
     const { props, state, setAfterLoginPath } = this;
     return (
       <Styles.App ready={state.ready} loading={`${props.loading}`}>
-        {props.authenticated && (
-          <VerifyEmailAlert
-            userId={props.userId}
-            emailVerified={props.emailVerified}
-            emailAddress={props.emailAddress}
-          />
-        )}
-        {props.authenticated && <GDPRConsentModal userId={props.userId} />}
+        {props.authenticated}
         <Navigation {...props} {...state} />
         <Grid>
           <Switch>
