@@ -8,9 +8,6 @@ const Index = () => (
   <Styles.Index>
     <h1>{`${productName}`}</h1>
     <p />
-    <footer>
-      <p />
-    </footer>
   </Styles.Index>
 );
 
